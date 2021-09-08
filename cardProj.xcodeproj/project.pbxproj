@@ -3,18 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		B520D06A26E7E3FA0032A477 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520D06926E7E3FA0032A477 /* AppDelegate.swift */; };
 		B520D06C26E7E3FA0032A477 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520D06B26E7E3FA0032A477 /* SceneDelegate.swift */; };
-		B520D06E26E7E3FA0032A477 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520D06D26E7E3FA0032A477 /* ViewController.swift */; };
-		B520D07126E7E3FA0032A477 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B520D06F26E7E3FA0032A477 /* Main.storyboard */; };
+		B520D06E26E7E3FA0032A477 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520D06D26E7E3FA0032A477 /* LoginViewController.swift */; };
+		B520D07126E7E3FA0032A477 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B520D06F26E7E3FA0032A477 /* Login.storyboard */; };
 		B520D07326E7E3FA0032A477 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B520D07226E7E3FA0032A477 /* Assets.xcassets */; };
 		B520D07626E7E3FA0032A477 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B520D07426E7E3FA0032A477 /* LaunchScreen.storyboard */; };
 		B520D08126E7E3FB0032A477 /* cardProjTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520D08026E7E3FB0032A477 /* cardProjTests.swift */; };
 		B520D08C26E7E3FB0032A477 /* cardProjUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520D08B26E7E3FB0032A477 /* cardProjUITests.swift */; };
+		B520D09D26E7FCCB0032A477 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = B520D09C26E7FCCB0032A477 /* FirebaseDatabase */; };
+		B520D09F26E7FCCB0032A477 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = B520D09E26E7FCCB0032A477 /* FirebaseRemoteConfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +40,8 @@
 		B520D06626E7E3FA0032A477 /* cardProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cardProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B520D06926E7E3FA0032A477 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B520D06B26E7E3FA0032A477 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B520D06D26E7E3FA0032A477 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B520D07026E7E3FA0032A477 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B520D06D26E7E3FA0032A477 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B520D07026E7E3FA0032A477 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		B520D07226E7E3FA0032A477 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B520D07526E7E3FA0032A477 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B520D07726E7E3FA0032A477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B520D09D26E7FCCB0032A477 /* FirebaseDatabase in Frameworks */,
+				B520D09F26E7FCCB0032A477 /* FirebaseRemoteConfig in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,10 +103,10 @@
 		B520D06826E7E3FA0032A477 /* cardProj */ = {
 			isa = PBXGroup;
 			children = (
+				B520D0A226E903A30032A477 /* Controller */,
+				B520D0A026E9037E0032A477 /* view */,
 				B520D06926E7E3FA0032A477 /* AppDelegate.swift */,
 				B520D06B26E7E3FA0032A477 /* SceneDelegate.swift */,
-				B520D06D26E7E3FA0032A477 /* ViewController.swift */,
-				B520D06F26E7E3FA0032A477 /* Main.storyboard */,
 				B520D07226E7E3FA0032A477 /* Assets.xcassets */,
 				B520D07426E7E3FA0032A477 /* LaunchScreen.storyboard */,
 				B520D07726E7E3FA0032A477 /* Info.plist */,
@@ -128,6 +132,22 @@
 			path = cardProjUITests;
 			sourceTree = "<group>";
 		};
+		B520D0A026E9037E0032A477 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				B520D06F26E7E3FA0032A477 /* Login.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		B520D0A226E903A30032A477 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B520D06D26E7E3FA0032A477 /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +164,10 @@
 			dependencies = (
 			);
 			name = cardProj;
+			packageProductDependencies = (
+				B520D09C26E7FCCB0032A477 /* FirebaseDatabase */,
+				B520D09E26E7FCCB0032A477 /* FirebaseRemoteConfig */,
+			);
 			productName = cardProj;
 			productReference = B520D06626E7E3FA0032A477 /* cardProj.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +239,9 @@
 				Base,
 			);
 			mainGroup = B520D05D26E7E3FA0032A477;
+			packageReferences = (
+				B520D09B26E7FCCB0032A477 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = B520D06726E7E3FA0032A477 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +260,7 @@
 			files = (
 				B520D07626E7E3FA0032A477 /* LaunchScreen.storyboard in Resources */,
 				B520D07326E7E3FA0032A477 /* Assets.xcassets in Resources */,
-				B520D07126E7E3FA0032A477 /* Main.storyboard in Resources */,
+				B520D07126E7E3FA0032A477 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B520D06E26E7E3FA0032A477 /* ViewController.swift in Sources */,
+				B520D06E26E7E3FA0032A477 /* LoginViewController.swift in Sources */,
 				B520D06A26E7E3FA0032A477 /* AppDelegate.swift in Sources */,
 				B520D06C26E7E3FA0032A477 /* SceneDelegate.swift in Sources */,
 			);
@@ -296,12 +323,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B520D06F26E7E3FA0032A477 /* Main.storyboard */ = {
+		B520D06F26E7E3FA0032A477 /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B520D07026E7E3FA0032A477 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 		B520D07426E7E3FA0032A477 /* LaunchScreen.storyboard */ = {
@@ -587,6 +614,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B520D09B26E7FCCB0032A477 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B520D09C26E7FCCB0032A477 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B520D09B26E7FCCB0032A477 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		B520D09E26E7FCCB0032A477 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B520D09B26E7FCCB0032A477 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B520D05E26E7E3FA0032A477 /* Project object */;
 }
