@@ -21,6 +21,7 @@ class LoginVC: UIViewController {
     @IBOutlet weak var usernameTF: UITextField!
     
     @IBOutlet weak var emailTF: UITextField!
+    
     @IBAction func signIn(_ sender: Any) {
         guard let email = emailTF.text else {return}
       guard let username = usernameTF.text else {return}
@@ -46,7 +47,21 @@ class LoginVC: UIViewController {
         }
     }
     @IBAction func guest(_ sender: Any) {
+        navigateGuest()
     }
+    
+    
+    func navigateGuest() {
+        
+        let flashCardSB = UIStoryboard(name: "FlashCard", bundle: nil)
+        let vc = flashCardSB.instantiateViewController(withIdentifier: "FlashCard" )
+        self.present(vc, animated: true)
+       
+        //self.LoginVC(flashCardVC, animated:true, completion:nil)
+        
+    }
+}
+    
     /*
     // MARK: - Navigation
 
@@ -57,4 +72,4 @@ class LoginVC: UIViewController {
     }
     */
 
-}
+
