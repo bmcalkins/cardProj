@@ -10,18 +10,23 @@ import Foundation
 protocol FlashCardUser {
     var name: String { get set}
     var email: String {get set}
-    var dateStarted: Date {get set}
+    
+    init(name: String, email: String)
 }
 
 struct guestUser: FlashCardUser
 {
     var name: String = "Guest"
     var email: String = "guest@gmail.com"
-    var dateStarted: Date
 }
 
 struct loggedInUser: FlashCardUser
 {
+    init(name: String, email: String) {
+        self.name = name
+        self.email = email
+    }
+    
     
     var name: String
     var email: String

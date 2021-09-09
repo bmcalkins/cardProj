@@ -6,16 +6,21 @@
 //
 
 import Foundation
-
+///MARK: singleton class to handle state
 final public class FlashCardManager
 {
+    static let shared = FlashCardManager()
+    
+    private init(){}
+    
+    var currentUser: FlashCardUser
+    
     fileprivate var userView: UserViewState = UnknownTypeUser()
     
     public func enterApp(userName: String, userEmail: String)
     {
-        userView = UnknownTypeUser(context: self)
-        userView.validate(userName: userName, userEmail: userEmail)
-        
+        let viewToUse = userView.validate(userName: userName, userEmail: userEmail)
+        FlashCardManager.shared.userView = viewToUse
     }
     
     public func cardButtonTapped() {

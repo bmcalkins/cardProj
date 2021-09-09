@@ -15,7 +15,8 @@ protocol UserViewState
 }
 /// struct for registered user implementation of the navigation bar buttons
 struct RegisteredViewState: UserViewState {
-    var context = FlashCardManager()
+    var context = FlashCardManager.shared
+    let user: FlashCardUser
     
     func cardButtonTapped() {
         //nav to cards
@@ -24,6 +25,9 @@ struct RegisteredViewState: UserViewState {
     
     func accountButtonTapped() {
         //nav to accountDetails
+        //show nav detail
+        //show name
+        //show date flashCardUser.name
     }
     
     func createButtonTapped() {
@@ -32,7 +36,8 @@ struct RegisteredViewState: UserViewState {
 }
 /// struct for guest view implementation of the navigation buttons
 struct GuestViewState: UserViewState {
-    var context = FlashCardManager()
+    var context = FlashCardManager.shared
+    let user: FlashCardUser = guestUser()
     
     func cardButtonTapped() {
         //refresh view
@@ -48,7 +53,8 @@ struct GuestViewState: UserViewState {
 }
 
 struct UnknownTypeUser: UserViewState {
-    var context = FlashCardManager()
+    var context = FlashCardManager.shared
+    
     
     func cardButtonTapped() {
         //nothing
@@ -65,9 +71,9 @@ struct UnknownTypeUser: UserViewState {
 }
 
 extension UserViewState{
-    func validate(userName: String, userEmail: String)
+    func validate(userName: String?, userEmail: String?) -> UserViewState
     {
-        //logic to contact firebase
+        
     }
 }
 
