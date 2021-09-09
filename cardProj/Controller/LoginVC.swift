@@ -52,12 +52,19 @@ class LoginVC: UIViewController {
     
     
     func navigateGuest() {
+            let tabBarVC = UITabBarController()
+            let vc1 = FlashCardVC()
+            tabBarVC.setViewControllers([vc1], animated: false)
         
-        let flashCardSB = UIStoryboard(name: "FlashCard", bundle: nil)
-        let vc = flashCardSB.instantiateViewController(withIdentifier: "FlashCard" )
-        self.present(vc, animated: true)
+            tabBarVC.modalPresentationStyle = .fullScreen
+        present(tabBarVC, animated: true)
+        
+        show(tabBarVC, sender: nil)
+//        let flashCardSB = UIStoryboard(name: "FlashCard", bundle: nil)
+//        let vc = flashCardSB.instantiateViewController(withIdentifier: "FlashCard" )
+//        self.present(vc, animated: true)
        
-        //self.LoginVC(flashCardVC, animated:true, completion:nil)
+        
         
     }
 }
