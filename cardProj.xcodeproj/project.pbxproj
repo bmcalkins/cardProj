@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5419249F26EA4BFD004E3263 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5419249E26EA4BFD004E3263 /* ViewModel.swift */; };
 		541924A426EA4CC3004E3263 /* AppStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541924A326EA4CC3004E3263 /* AppStates.swift */; };
+		541924A626EA4DC0004E3263 /* FlashCardUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541924A526EA4DC0004E3263 /* FlashCardUser.swift */; };
 		B520D06A26E7E3FA0032A477 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520D06926E7E3FA0032A477 /* AppDelegate.swift */; };
 		B520D06C26E7E3FA0032A477 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520D06B26E7E3FA0032A477 /* SceneDelegate.swift */; };
 		B520D06E26E7E3FA0032A477 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520D06D26E7E3FA0032A477 /* LoginViewController.swift */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		5419249E26EA4BFD004E3263 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		541924A326EA4CC3004E3263 /* AppStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStates.swift; sourceTree = "<group>"; };
+		541924A526EA4DC0004E3263 /* FlashCardUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardUser.swift; sourceTree = "<group>"; };
 		B520D06626E7E3FA0032A477 /* cardProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cardProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B520D06926E7E3FA0032A477 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B520D06B26E7E3FA0032A477 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				541924A326EA4CC3004E3263 /* AppStates.swift */,
+				541924A526EA4DC0004E3263 /* FlashCardUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				5419249F26EA4BFD004E3263 /* ViewModel.swift in Sources */,
 				541924A426EA4CC3004E3263 /* AppStates.swift in Sources */,
 				B520D06C26E7E3FA0032A477 /* SceneDelegate.swift in Sources */,
+				541924A626EA4DC0004E3263 /* FlashCardUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

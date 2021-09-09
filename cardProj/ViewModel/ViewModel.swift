@@ -11,6 +11,7 @@ import Foundation
 
 final public class FlashCardManager
 {
+    
     fileprivate var userView: UserViewState = UnknownTypeUser()
     
     public func enterApp(userName: String, userEmail: String)
