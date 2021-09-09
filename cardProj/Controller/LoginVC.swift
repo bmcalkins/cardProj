@@ -57,9 +57,9 @@ class LoginVC: UIViewController {
             tabBarVC.setViewControllers([vc1], animated: false)
         
             tabBarVC.modalPresentationStyle = .fullScreen
-        present(tabBarVC, animated: true)
+            present(tabBarVC, animated: true)
         
-        show(tabBarVC, sender: nil)
+            show(tabBarVC, sender: nil)
 //        let flashCardSB = UIStoryboard(name: "FlashCard", bundle: nil)
 //        let vc = flashCardSB.instantiateViewController(withIdentifier: "FlashCard" )
 //        self.present(vc, animated: true)
