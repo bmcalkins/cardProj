@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5419249F26EA4BFD004E3263 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5419249E26EA4BFD004E3263 /* ViewModel.swift */; };
+		541924A426EA4CC3004E3263 /* AppStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541924A326EA4CC3004E3263 /* AppStates.swift */; };
 		B520D06A26E7E3FA0032A477 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520D06926E7E3FA0032A477 /* AppDelegate.swift */; };
 		B520D06C26E7E3FA0032A477 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520D06B26E7E3FA0032A477 /* SceneDelegate.swift */; };
 		B520D06E26E7E3FA0032A477 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520D06D26E7E3FA0032A477 /* LoginViewController.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5419249E26EA4BFD004E3263 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		541924A326EA4CC3004E3263 /* AppStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStates.swift; sourceTree = "<group>"; };
 		B520D06626E7E3FA0032A477 /* cardProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cardProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B520D06926E7E3FA0032A477 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B520D06B26E7E3FA0032A477 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,13 +84,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5419249D26EA4BDD004E3263 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5419249E26EA4BFD004E3263 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		541924A226EA4C87004E3263 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				541924A326EA4CC3004E3263 /* AppStates.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		B520D05D26E7E3FA0032A477 = {
 			isa = PBXGroup;
 			children = (
 				B520D06826E7E3FA0032A477 /* cardProj */,
 				B520D07F26E7E3FB0032A477 /* cardProjTests */,
 				B520D08A26E7E3FB0032A477 /* cardProjUITests */,
-				B520D06726E7E3FA0032A477 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,15 +117,19 @@
 				B520D08726E7E3FB0032A477 /* cardProjUITests.xctest */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		B520D06826E7E3FA0032A477 /* cardProj */ = {
 			isa = PBXGroup;
 			children = (
+				541924A226EA4C87004E3263 /* Model */,
+				5419249D26EA4BDD004E3263 /* ViewModel */,
 				B520D0A226E903A30032A477 /* Controller */,
 				B520D0A026E9037E0032A477 /* view */,
 				B520D06926E7E3FA0032A477 /* AppDelegate.swift */,
 				B520D06B26E7E3FA0032A477 /* SceneDelegate.swift */,
+				B520D06726E7E3FA0032A477 /* Products */,
 				B520D07226E7E3FA0032A477 /* Assets.xcassets */,
 				B520D07426E7E3FA0032A477 /* LaunchScreen.storyboard */,
 				B520D07726E7E3FA0032A477 /* Info.plist */,
@@ -287,6 +310,8 @@
 			files = (
 				B520D06E26E7E3FA0032A477 /* LoginViewController.swift in Sources */,
 				B520D06A26E7E3FA0032A477 /* AppDelegate.swift in Sources */,
+				5419249F26EA4BFD004E3263 /* ViewModel.swift in Sources */,
+				541924A426EA4CC3004E3263 /* AppStates.swift in Sources */,
 				B520D06C26E7E3FA0032A477 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
