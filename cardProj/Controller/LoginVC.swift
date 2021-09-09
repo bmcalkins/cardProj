@@ -22,7 +22,12 @@ class LoginVC: UIViewController {
     
     @IBOutlet weak var emailTF: UITextField!
     
+<<<<<<< Updated upstream:cardProj/Controller/LoginVC.swift
     @IBAction func signIn(_ sender: Any) {
+=======
+    @IBAction func signIn(_ sender: Any)
+    {        
+>>>>>>> Stashed changes:cardProj/view/LoginVC.swift
         guard let email = emailTF.text else {return}
       guard let username = usernameTF.text else {return}
         Auth.auth().signIn(withEmail: email, password: username) { (user, error) in

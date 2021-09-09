@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< Updated upstream
+=======
+		54E291C626EA545700BF53F1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E291C526EA545700BF53F1 /* ViewModel.swift */; };
+		54E291C826EA54B000BF53F1 /* FlashCardUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E291C726EA54B000BF53F1 /* FlashCardUser.swift */; };
+		54E291CA26EA54FE00BF53F1 /* AppStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E291C926EA54FE00BF53F1 /* AppStates.swift */; };
+		54E291CD26EA7E1200BF53F1 /* CardCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E291CB26EA7E1200BF53F1 /* CardCollectionVC.swift */; };
+		54E291CE26EA7E1200BF53F1 /* CardCollectionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E291CC26EA7E1200BF53F1 /* CardCollectionVC.xib */; };
+>>>>>>> Stashed changes
 		B520D06A26E7E3FA0032A477 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520D06926E7E3FA0032A477 /* AppDelegate.swift */; };
 		B520D06C26E7E3FA0032A477 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520D06B26E7E3FA0032A477 /* SceneDelegate.swift */; };
 		B520D07326E7E3FA0032A477 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B520D07226E7E3FA0032A477 /* Assets.xcassets */; };
@@ -43,6 +51,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< Updated upstream
+=======
+		54E291C526EA545700BF53F1 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		54E291C726EA54B000BF53F1 /* FlashCardUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardUser.swift; sourceTree = "<group>"; };
+		54E291C926EA54FE00BF53F1 /* AppStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStates.swift; sourceTree = "<group>"; };
+		54E291CB26EA7E1200BF53F1 /* CardCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionVC.swift; sourceTree = "<group>"; };
+		54E291CC26EA7E1200BF53F1 /* CardCollectionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCollectionVC.xib; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
 		B520D06626E7E3FA0032A477 /* cardProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cardProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B520D06926E7E3FA0032A477 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B520D06B26E7E3FA0032A477 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +166,8 @@
 			children = (
 				B520D0C026EA593D0032A477 /* FlashCard.storyboard */,
 				B520D0B126E99A7E0032A477 /* Main.storyboard */,
+				54E291CB26EA7E1200BF53F1 /* CardCollectionVC.swift */,
+				54E291CC26EA7E1200BF53F1 /* CardCollectionVC.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -281,6 +299,7 @@
 				B520D07326E7E3FA0032A477 /* Assets.xcassets in Resources */,
 				B520D0C126EA593D0032A477 /* FlashCard.storyboard in Resources */,
 				B520D0B226E99A7E0032A477 /* Main.storyboard in Resources */,
+				54E291CE26EA7E1200BF53F1 /* CardCollectionVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +324,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< Updated upstream
 				B520D0BF26EA58920032A477 /* FlashCardVC.swift in Sources */,
+=======
+				54E291CD26EA7E1200BF53F1 /* CardCollectionVC.swift in Sources */,
+				54E291C626EA545700BF53F1 /* ViewModel.swift in Sources */,
+>>>>>>> Stashed changes
 				B520D06A26E7E3FA0032A477 /* AppDelegate.swift in Sources */,
 				B520D06C26E7E3FA0032A477 /* SceneDelegate.swift in Sources */,
 				B520D0B426E99AFB0032A477 /* LoginVC.swift in Sources */,
