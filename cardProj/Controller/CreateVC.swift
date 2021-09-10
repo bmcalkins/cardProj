@@ -1,5 +1,5 @@
 //
-//  FlashCardVC.swift
+//  CreateVC.swift
 //  cardProj
 //
 //  Created by Bradley Calkins on 9/9/21.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-class FlashCardVC: UIViewController {
+class CreateVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        view.backgroundColor = .green
         // Do any additional setup after loading the view.
     }
     

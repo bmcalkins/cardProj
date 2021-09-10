@@ -6,10 +6,14 @@
 //
 
 import Foundation
+import Firebase
 
-struct User: Codable {
-    var username: String
-    var email: String 
+struct User {
+   
+    static var current: Firebase.User? = nil
     
+    static func isGuest() -> Bool {
+        return current == nil
+    }
 
 }
