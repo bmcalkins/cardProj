@@ -67,9 +67,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="error" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRf-VD-Jxf">
-                                <rect key="frame" x="149" y="169" width="37" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRf-VD-Jxf" userLabel="error">
+                                <rect key="frame" x="0.0" y="169" width="400" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -80,6 +80,7 @@
                     </view>
                     <connections>
                         <outlet property="emailTF" destination="jLo-XK-bne" id="30F-A3-vUY"/>
+                        <outlet property="errorLabel" destination="gRf-VD-Jxf" id="PWi-hb-aTX"/>
                         <outlet property="usernameTF" destination="2L5-Gn-UdO" id="sR0-l5-fn1"/>
                     </connections>
                 </viewController>

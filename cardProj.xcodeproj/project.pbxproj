@@ -7,14 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< Updated upstream
-=======
-		54E291C626EA545700BF53F1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E291C526EA545700BF53F1 /* ViewModel.swift */; };
-		54E291C826EA54B000BF53F1 /* FlashCardUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E291C726EA54B000BF53F1 /* FlashCardUser.swift */; };
-		54E291CA26EA54FE00BF53F1 /* AppStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E291C926EA54FE00BF53F1 /* AppStates.swift */; };
-		54E291CD26EA7E1200BF53F1 /* CardCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E291CB26EA7E1200BF53F1 /* CardCollectionVC.swift */; };
-		54E291CE26EA7E1200BF53F1 /* CardCollectionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E291CC26EA7E1200BF53F1 /* CardCollectionVC.xib */; };
->>>>>>> Stashed changes
 		B520D06A26E7E3FA0032A477 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520D06926E7E3FA0032A477 /* AppDelegate.swift */; };
 		B520D06C26E7E3FA0032A477 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520D06B26E7E3FA0032A477 /* SceneDelegate.swift */; };
 		B520D07326E7E3FA0032A477 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B520D07226E7E3FA0032A477 /* Assets.xcassets */; };
@@ -31,6 +23,10 @@
 		B520D0BD26E9A25C0032A477 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = B520D0BC26E9A25C0032A477 /* FirebaseDatabase */; };
 		B520D0BF26EA58920032A477 /* FlashCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520D0BE26EA58920032A477 /* FlashCardVC.swift */; };
 		B520D0C126EA593D0032A477 /* FlashCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B520D0C026EA593D0032A477 /* FlashCard.storyboard */; };
+		B520D0C326EA8FCB0032A477 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520D0C226EA8FCB0032A477 /* AccountVC.swift */; };
+		B520D0C526EA8FF30032A477 /* CreateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520D0C426EA8FF30032A477 /* CreateVC.swift */; };
+		B520D0C726EA90E40032A477 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B520D0C626EA90E40032A477 /* Account.storyboard */; };
+		B520D0C926EA91130032A477 /* Create.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B520D0C826EA91130032A477 /* Create.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,14 +47,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-<<<<<<< Updated upstream
-=======
-		54E291C526EA545700BF53F1 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		54E291C726EA54B000BF53F1 /* FlashCardUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardUser.swift; sourceTree = "<group>"; };
-		54E291C926EA54FE00BF53F1 /* AppStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStates.swift; sourceTree = "<group>"; };
-		54E291CB26EA7E1200BF53F1 /* CardCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionVC.swift; sourceTree = "<group>"; };
-		54E291CC26EA7E1200BF53F1 /* CardCollectionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCollectionVC.xib; sourceTree = "<group>"; };
->>>>>>> Stashed changes
 		B520D06626E7E3FA0032A477 /* cardProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cardProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B520D06926E7E3FA0032A477 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B520D06B26E7E3FA0032A477 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +65,10 @@
 		B520D0B326E99AFB0032A477 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		B520D0BE26EA58920032A477 /* FlashCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardVC.swift; sourceTree = "<group>"; };
 		B520D0C026EA593D0032A477 /* FlashCard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FlashCard.storyboard; sourceTree = "<group>"; };
+		B520D0C226EA8FCB0032A477 /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
+		B520D0C426EA8FF30032A477 /* CreateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateVC.swift; sourceTree = "<group>"; };
+		B520D0C626EA90E40032A477 /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
+		B520D0C826EA91130032A477 /* Create.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Create.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,8 +158,8 @@
 			children = (
 				B520D0C026EA593D0032A477 /* FlashCard.storyboard */,
 				B520D0B126E99A7E0032A477 /* Main.storyboard */,
-				54E291CB26EA7E1200BF53F1 /* CardCollectionVC.swift */,
-				54E291CC26EA7E1200BF53F1 /* CardCollectionVC.xib */,
+				B520D0C626EA90E40032A477 /* Account.storyboard */,
+				B520D0C826EA91130032A477 /* Create.storyboard */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -178,6 +170,8 @@
 				B520D0AD26E93E430032A477 /* UserModel .swift */,
 				B520D0B326E99AFB0032A477 /* LoginVC.swift */,
 				B520D0BE26EA58920032A477 /* FlashCardVC.swift */,
+				B520D0C226EA8FCB0032A477 /* AccountVC.swift */,
+				B520D0C426EA8FF30032A477 /* CreateVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -298,8 +292,9 @@
 				B520D0B026E98F8B0032A477 /* GoogleService-Info.plist in Resources */,
 				B520D07326E7E3FA0032A477 /* Assets.xcassets in Resources */,
 				B520D0C126EA593D0032A477 /* FlashCard.storyboard in Resources */,
+				B520D0C726EA90E40032A477 /* Account.storyboard in Resources */,
 				B520D0B226E99A7E0032A477 /* Main.storyboard in Resources */,
-				54E291CE26EA7E1200BF53F1 /* CardCollectionVC.xib in Resources */,
+				B520D0C926EA91130032A477 /* Create.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,13 +319,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< Updated upstream
 				B520D0BF26EA58920032A477 /* FlashCardVC.swift in Sources */,
-=======
-				54E291CD26EA7E1200BF53F1 /* CardCollectionVC.swift in Sources */,
-				54E291C626EA545700BF53F1 /* ViewModel.swift in Sources */,
->>>>>>> Stashed changes
 				B520D06A26E7E3FA0032A477 /* AppDelegate.swift in Sources */,
+				B520D0C326EA8FCB0032A477 /* AccountVC.swift in Sources */,
+				B520D0C526EA8FF30032A477 /* CreateVC.swift in Sources */,
 				B520D06C26E7E3FA0032A477 /* SceneDelegate.swift in Sources */,
 				B520D0B426E99AFB0032A477 /* LoginVC.swift in Sources */,
 				B520D0AE26E93E430032A477 /* UserModel .swift in Sources */,
