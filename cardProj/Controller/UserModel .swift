@@ -15,5 +15,13 @@ struct User {
     static func isGuest() -> Bool {
         return current == nil
     }
+}
+
+public struct Flashcard: Codable {
+
+    let description: String
+    let headline: String
+   
+
 
 }

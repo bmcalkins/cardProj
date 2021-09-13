@@ -21,7 +21,7 @@ class CreateVC: UIViewController {
     
     
     @IBAction func createCard(_ sender: Any) {
-        captureCard() 
+        captureCard()
     }
     
     
@@ -35,8 +35,8 @@ class CreateVC: UIViewController {
         var ref: DocumentReference? = nil
         
         ref = db.collection("flashcard").addDocument(data: [
-            "Description": descriptionField.text,
-            "Headline": headlineField.text
+            "Description": descriptionField.text!,
+            "Headline": headlineField.text!
         ]) { err in
             if let err = err {
                 print("Error adding document: \(err)")
