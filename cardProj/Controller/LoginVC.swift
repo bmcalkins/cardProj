@@ -58,13 +58,17 @@ class LoginVC: UIViewController {
     
     func navigateGuest() {
         let tabBarVC = UITabBarController()
-        let vc1 = FlashCardVC()
+        
+        let flashCardSB = UIStoryboard(name: "FlashCard", bundle: nil)
+        let vc1 = flashCardSB.instantiateViewController(withIdentifier: "FlashCardVC")
         vc1.title = "Cards"
         
-        
-        let vc2 = AccountVC()
+        let accountCardSB = UIStoryboard(name: "Account", bundle: nil)
+        let vc2 = accountCardSB.instantiateViewController(withIdentifier: "AccountVC")
         vc2.title = "Account"
-        let vc3 = CreateVC()
+        
+        let createCardSB = UIStoryboard(name: "Create", bundle: nil)
+        let vc3 = createCardSB.instantiateViewController(withIdentifier: "CreateVC" )
         vc3.title  = "Create"
         tabBarVC.setViewControllers([vc1, vc2, vc3], animated: false)
         
@@ -74,7 +78,7 @@ class LoginVC: UIViewController {
         
         show(tabBarVC, sender: nil)
         //        let flashCardSB = UIStoryboard(name: "FlashCard", bundle: nil)
-        //        let vc = flashCardSB.instantiateViewController(withIdentifier: "FlashCard" )
+            
         //        self.present(vc, animated: true)
         
         
