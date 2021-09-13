@@ -26,7 +26,7 @@
 		B520D0C326EA8FCB0032A477 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520D0C226EA8FCB0032A477 /* AccountVC.swift */; };
 		B520D0C526EA8FF30032A477 /* CreateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520D0C426EA8FF30032A477 /* CreateVC.swift */; };
 		B520D0C726EA90E40032A477 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B520D0C626EA90E40032A477 /* Account.storyboard */; };
-		B520D0C926EA91130032A477 /* Create.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B520D0C826EA91130032A477 /* Create.storyboard */; };
+		B520D0CB26EF844C0032A477 /* Create.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B520D0CA26EF844C0032A477 /* Create.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +68,7 @@
 		B520D0C226EA8FCB0032A477 /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
 		B520D0C426EA8FF30032A477 /* CreateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateVC.swift; sourceTree = "<group>"; };
 		B520D0C626EA90E40032A477 /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
-		B520D0C826EA91130032A477 /* Create.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Create.storyboard; sourceTree = "<group>"; };
+		B520D0CA26EF844C0032A477 /* Create.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Create.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +159,7 @@
 				B520D0C026EA593D0032A477 /* FlashCard.storyboard */,
 				B520D0B126E99A7E0032A477 /* Main.storyboard */,
 				B520D0C626EA90E40032A477 /* Account.storyboard */,
-				B520D0C826EA91130032A477 /* Create.storyboard */,
+				B520D0CA26EF844C0032A477 /* Create.storyboard */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -294,7 +294,7 @@
 				B520D0C126EA593D0032A477 /* FlashCard.storyboard in Resources */,
 				B520D0C726EA90E40032A477 /* Account.storyboard in Resources */,
 				B520D0B226E99A7E0032A477 /* Main.storyboard in Resources */,
-				B520D0C926EA91130032A477 /* Create.storyboard in Resources */,
+				B520D0CB26EF844C0032A477 /* Create.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
