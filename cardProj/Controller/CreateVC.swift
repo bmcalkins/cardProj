@@ -28,21 +28,29 @@ class CreateVC: UIViewController {
     @IBOutlet weak var descriptionField: UITextView!
     @IBOutlet weak var headlineField: UITextField!
     
+     
+    
+//    let formData = Flashcard(
+//        description: descriptionField.text!,
+//        headline: headlineField.text!
+//    )
+    
     
     
     func captureCard() {
+        
+        
         let db = Firestore.firestore()
         var ref: DocumentReference? = nil
-        
+
         ref = db.collection("flashcard").addDocument(data: [
             "description": descriptionField.text!,
             "headline": headlineField.text!
         ]) { err in
             if let err = err {
                 print("Error adding document: \(err)")
-            } else {
-                print("Document added with ID: \(ref!.documentID)")
             }
+            
         }
     }
 

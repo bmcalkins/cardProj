@@ -18,10 +18,9 @@ struct User {
 }
 
 public struct Flashcard: Codable {
-
+    
     let description: String
     let headline: String
-   
-
-
 }
+
+
