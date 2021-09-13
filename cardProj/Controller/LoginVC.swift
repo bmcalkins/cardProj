@@ -69,6 +69,7 @@ class LoginVC: UIViewController {
         tabBarVC.setViewControllers([vc1, vc2, vc3], animated: false)
         
         tabBarVC.modalPresentationStyle = .fullScreen
+        
         present(tabBarVC, animated: true)
         
         show(tabBarVC, sender: nil)
