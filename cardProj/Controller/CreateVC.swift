@@ -13,11 +13,13 @@ class CreateVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        textViewDesign!.layer.borderWidth = 1
+        textViewDesign!.layer.borderColor = UIColor.black.cgColor
         // Do any additional setup after loading the view.
        
      
     }
+    @IBOutlet weak var textViewDesign: UITextView!
     
     
     @IBAction func createCard(_ sender: Any) {
