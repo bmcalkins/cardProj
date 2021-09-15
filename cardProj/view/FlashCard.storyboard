@@ -3,8 +3,10 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,16 +17,124 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NWS-Am-AQj">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Fag-5y-d9C">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MainMenuCollectionViewCell" id="JSe-SJ-Ni9" customClass="MainMenuCollectionViewCell" customModule="cardProj" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="enr-zV-JzZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MlU-TJ-44S">
+                                                    <rect key="frame" x="43" y="54" width="42" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" name="AccentColor"/>
+                                            <constraints>
+                                                <constraint firstItem="MlU-TJ-44S" firstAttribute="centerY" secondItem="enr-zV-JzZ" secondAttribute="centerY" id="Dms-5g-4RU"/>
+                                                <constraint firstItem="MlU-TJ-44S" firstAttribute="centerX" secondItem="enr-zV-JzZ" secondAttribute="centerX" id="HJM-CT-RoO"/>
+                                                <constraint firstItem="MlU-TJ-44S" firstAttribute="centerY" secondItem="enr-zV-JzZ" secondAttribute="centerY" id="InL-BJ-akL"/>
+                                                <constraint firstItem="MlU-TJ-44S" firstAttribute="centerX" secondItem="enr-zV-JzZ" secondAttribute="centerX" id="WEY-MB-yUp"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="mainMainDisplay" destination="MlU-TJ-44S" id="JvO-dz-cbJ"/>
+                                            <segue destination="4Am-l4-6JJ" kind="show" identifier="moveToCarousel" id="4Hp-5v-bVk"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NWS-Am-AQj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Ebz-fE-LLI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="NWS-Am-AQj" secondAttribute="bottom" id="HtL-x7-2hK"/>
+                            <constraint firstItem="NWS-Am-AQj" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="syS-QK-aoL"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="NWS-Am-AQj" secondAttribute="trailing" id="upV-sh-O01"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mainMenuCollectionView" destination="NWS-Am-AQj" id="etu-DS-jpq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-178" y="-54"/>
+            <point key="canvasLocation" x="-178.2608695652174" y="-54.241071428571423"/>
+        </scene>
+        <!--Carousel Collection View Controller-->
+        <scene sceneID="Rm0-Dg-QpX">
+            <objects>
+                <collectionViewController id="4Am-l4-6JJ" customClass="CarouselCollectionViewController" customModule="cardProj" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" dataMode="prototypes" id="35C-sF-CIU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hNZ-Al-dAg">
+                            <size key="itemSize" width="414" height="812"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CarouselCollectionViewCell" id="2pk-58-8Di" customClass="CarouselCollectionViewCell" customModule="cardProj" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="71" width="300" height="700"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="oGf-iH-2rA">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="700"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZP-Ta-zYo">
+                                            <rect key="frame" x="129" y="339.5" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="NZP-Ta-zYo" firstAttribute="centerY" secondItem="oGf-iH-2rA" secondAttribute="centerY" id="5HP-qD-csm"/>
+                                        <constraint firstItem="NZP-Ta-zYo" firstAttribute="centerX" secondItem="oGf-iH-2rA" secondAttribute="centerX" id="xde-cl-Qda"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <size key="customSize" width="300" height="700"/>
+                                <connections>
+                                    <outlet property="cardSide" destination="NZP-Ta-zYo" id="vFd-ov-tGv"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="4Am-l4-6JJ" id="9BE-NB-haK"/>
+                            <outlet property="delegate" destination="4Am-l4-6JJ" id="tM9-Qa-dzP"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="8KL-mc-pv4"/>
+                    <connections>
+                        <outlet property="carouselCollectionView" destination="35C-sF-CIU" id="w8D-xn-P18"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EAb-fu-oy0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="805.79710144927537" y="-54.241071428571423"/>
         </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.79199999570846558" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

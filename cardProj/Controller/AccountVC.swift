@@ -1,18 +1,24 @@
-//
-//  AccountVC.swift
-//  cardProj
-//
-//  Created by Bradley Calkins on 9/9/21.
-//
-
 import UIKit
 
 class AccountVC: UIViewController {
 
+    @IBOutlet weak var topLabel: UILabel!
+    @IBOutlet weak var bottomLabel: UILabel!
+    @IBOutlet weak var userScreen: UIView!
+    @IBOutlet weak var guestScreen: UIView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .blue 
+        view.backgroundColor = .blue
         // Do any additional setup after loading the view.
+        topLabel.text = "Please create an account"
+        bottomLabel.text = "Or login to Continue"
+        
+        userScreen.isHidden = User.isGuest()
+        
+        guestScreen.isHidden = !User.isGuest()
     }
     
 

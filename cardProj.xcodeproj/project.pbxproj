@@ -22,11 +22,14 @@
 		B520D0BB26E9A25C0032A477 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B520D0BA26E9A25C0032A477 /* FirebaseFirestore */; };
 		B520D0BD26E9A25C0032A477 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = B520D0BC26E9A25C0032A477 /* FirebaseDatabase */; };
 		B520D0BF26EA58920032A477 /* FlashCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520D0BE26EA58920032A477 /* FlashCardVC.swift */; };
-		B520D0C126EA593D0032A477 /* FlashCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B520D0C026EA593D0032A477 /* FlashCard.storyboard */; };
 		B520D0C326EA8FCB0032A477 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520D0C226EA8FCB0032A477 /* AccountVC.swift */; };
 		B520D0C526EA8FF30032A477 /* CreateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520D0C426EA8FF30032A477 /* CreateVC.swift */; };
-		B520D0C726EA90E40032A477 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B520D0C626EA90E40032A477 /* Account.storyboard */; };
 		B520D0CB26EF844C0032A477 /* Create.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B520D0CA26EF844C0032A477 /* Create.storyboard */; };
+		B520D0CD26F11D1D0032A477 /* CarouselCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520D0CC26F11D1D0032A477 /* CarouselCollectionViewController.swift */; };
+		B520D0CF26F11DF30032A477 /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520D0CE26F11DF30032A477 /* CarouselCollectionViewCell.swift */; };
+		B520D0D126F11E050032A477 /* MainMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520D0D026F11E050032A477 /* MainMenuCollectionViewCell.swift */; };
+		B520D0D426F120090032A477 /* FlashCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B520D0D326F120090032A477 /* FlashCard.storyboard */; };
+		B520D0D626F1202E0032A477 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B520D0D526F1202E0032A477 /* Account.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,11 +67,14 @@
 		B520D0B126E99A7E0032A477 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B520D0B326E99AFB0032A477 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		B520D0BE26EA58920032A477 /* FlashCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardVC.swift; sourceTree = "<group>"; };
-		B520D0C026EA593D0032A477 /* FlashCard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FlashCard.storyboard; sourceTree = "<group>"; };
 		B520D0C226EA8FCB0032A477 /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
 		B520D0C426EA8FF30032A477 /* CreateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateVC.swift; sourceTree = "<group>"; };
-		B520D0C626EA90E40032A477 /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		B520D0CA26EF844C0032A477 /* Create.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Create.storyboard; sourceTree = "<group>"; };
+		B520D0CC26F11D1D0032A477 /* CarouselCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewController.swift; sourceTree = "<group>"; };
+		B520D0CE26F11DF30032A477 /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
+		B520D0D026F11E050032A477 /* MainMenuCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		B520D0D326F120090032A477 /* FlashCard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FlashCard.storyboard; sourceTree = "<group>"; };
+		B520D0D526F1202E0032A477 /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +129,7 @@
 		B520D06826E7E3FA0032A477 /* cardProj */ = {
 			isa = PBXGroup;
 			children = (
+				B520D0D226F11E150032A477 /* Model */,
 				B520D0A226E903A30032A477 /* Controller */,
 				B520D0A026E9037E0032A477 /* view */,
 				B520D06926E7E3FA0032A477 /* AppDelegate.swift */,
@@ -156,9 +163,9 @@
 		B520D0A026E9037E0032A477 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				B520D0C026EA593D0032A477 /* FlashCard.storyboard */,
+				B520D0D526F1202E0032A477 /* Account.storyboard */,
 				B520D0B126E99A7E0032A477 /* Main.storyboard */,
-				B520D0C626EA90E40032A477 /* Account.storyboard */,
+				B520D0D326F120090032A477 /* FlashCard.storyboard */,
 				B520D0CA26EF844C0032A477 /* Create.storyboard */,
 			);
 			path = view;
@@ -172,8 +179,18 @@
 				B520D0BE26EA58920032A477 /* FlashCardVC.swift */,
 				B520D0C226EA8FCB0032A477 /* AccountVC.swift */,
 				B520D0C426EA8FF30032A477 /* CreateVC.swift */,
+				B520D0CC26F11D1D0032A477 /* CarouselCollectionViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		B520D0D226F11E150032A477 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B520D0CE26F11DF30032A477 /* CarouselCollectionViewCell.swift */,
+				B520D0D026F11E050032A477 /* MainMenuCollectionViewCell.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,13 +305,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B520D0D426F120090032A477 /* FlashCard.storyboard in Resources */,
 				B520D07626E7E3FA0032A477 /* LaunchScreen.storyboard in Resources */,
 				B520D0B026E98F8B0032A477 /* GoogleService-Info.plist in Resources */,
 				B520D07326E7E3FA0032A477 /* Assets.xcassets in Resources */,
-				B520D0C126EA593D0032A477 /* FlashCard.storyboard in Resources */,
-				B520D0C726EA90E40032A477 /* Account.storyboard in Resources */,
 				B520D0B226E99A7E0032A477 /* Main.storyboard in Resources */,
 				B520D0CB26EF844C0032A477 /* Create.storyboard in Resources */,
+				B520D0D626F1202E0032A477 /* Account.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +338,10 @@
 			files = (
 				B520D0BF26EA58920032A477 /* FlashCardVC.swift in Sources */,
 				B520D06A26E7E3FA0032A477 /* AppDelegate.swift in Sources */,
+				B520D0CD26F11D1D0032A477 /* CarouselCollectionViewController.swift in Sources */,
 				B520D0C326EA8FCB0032A477 /* AccountVC.swift in Sources */,
+				B520D0D126F11E050032A477 /* MainMenuCollectionViewCell.swift in Sources */,
+				B520D0CF26F11DF30032A477 /* CarouselCollectionViewCell.swift in Sources */,
 				B520D0C526EA8FF30032A477 /* CreateVC.swift in Sources */,
 				B520D06C26E7E3FA0032A477 /* SceneDelegate.swift in Sources */,
 				B520D0B426E99AFB0032A477 /* LoginVC.swift in Sources */,
