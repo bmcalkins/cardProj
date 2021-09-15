@@ -50,6 +50,7 @@ class LoginVC: UIViewController {
             
         }
     }
+    
     @IBAction func guest(_ sender: Any) {
         User.current = nil
         navigateGuest()
