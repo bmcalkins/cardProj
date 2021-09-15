@@ -72,6 +72,12 @@
                                 </subviews>
                                 <edgeInsets key="layoutMargins" top="8" left="20" bottom="8" right="20"/>
                             </stackView>
+                            <view contentMode="scaleToFill" id="caw-jT-yZm" userLabel="guest">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="safeArea" id="FYE-db-NNd"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" red="1" green="0.90138354129603859" blue="0.74808203109471094" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -84,8 +90,10 @@
                     </view>
                     <connections>
                         <outlet property="descriptionField" destination="7kA-IY-9Eb" id="Lcp-jT-aOE"/>
+                        <outlet property="guestScreen" destination="caw-jT-yZm" id="vaP-xQ-nVb"/>
                         <outlet property="headlineField" destination="tpC-ER-3MK" id="1bq-0I-ewz"/>
                         <outlet property="textViewDesign" destination="7kA-IY-9Eb" id="NWC-ug-Og1"/>
+                        <outlet property="userScreen" destination="5EZ-qb-Rvc" id="Ur0-Vb-jkg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
