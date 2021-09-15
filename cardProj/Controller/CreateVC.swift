@@ -9,16 +9,25 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 
+
+
 class CreateVC: UIViewController {
+    
+    @IBOutlet weak var userScreen: UIView!
+    @IBOutlet weak var guestScreen: UIView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
         
-        // Do any additional setup after loading the view.
-       
-     
+        userScreen.isHidden =
+            User.isGuest()
+        
+        guestScreen.isHidden =
+            !User.isGuest()
     }
+   
+    
     @IBOutlet weak var textViewDesign: UITextView!
     
     
@@ -26,16 +35,10 @@ class CreateVC: UIViewController {
         captureCard()
     }
     
-    
+   
     @IBOutlet weak var descriptionField: UITextView!
     @IBOutlet weak var headlineField: UITextField!
-    
-     
-    
-//    let formData = Flashcard(
-//        description: descriptionField.text!,
-//        headline: headlineField.text!
-//    )
+
     
     
     
