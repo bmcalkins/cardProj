@@ -9,7 +9,7 @@ class AccountVC: UIViewController {
     
     @IBOutlet weak var guestLabel: UILabel!
     @IBOutlet weak var guestScreen: UIView!
-  
+    var loginVC: LoginVC!
     
     @IBAction func signInNav(_ sender: Any) {
         navigateSignIn()
@@ -17,13 +17,8 @@ class AccountVC: UIViewController {
     
    func navigateSignIn() {
         
-    let loginSB = UIStoryboard(name: "Main", bundle: nil)
+    loginVC.dismiss(animated: true)
     
-    if let loginVC = loginSB.instantiateViewController(identifier: "LoginVC") as? LoginVC {
-        
-        navigationController?.pushViewController(loginVC, animated: true)
-    
-        }
     }
     
     override func viewDidLoad() {

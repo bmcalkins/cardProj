@@ -32,7 +32,8 @@ class LoginVC: UIViewController {
                 self.errorLabel.text = error.localizedDescription
                 return
             }
-            User.current? = result!.user
+//            User.current? = result!.user as Firebase.User
+            User.setUser(result!.user)
             self.navigateGuest()
         }
     }
@@ -45,7 +46,7 @@ class LoginVC: UIViewController {
                 return
             }
             
-            User.current? = result!.user
+            User.current? = result!.user as Firebase.User
             self.navigateGuest()
             
         }
@@ -64,8 +65,9 @@ class LoginVC: UIViewController {
         vc1.title = "Cards"
         
         let accountCardSB = UIStoryboard(name: "Account", bundle: nil)
-        let vc2 = accountCardSB.instantiateViewController(withIdentifier: "AccountVC")
+        let vc2 = accountCardSB.instantiateViewController(withIdentifier: "AccountVC") as! AccountVC
         vc2.title = "Account"
+        vc2.loginVC = self
         
         let createCardSB = UIStoryboard(name: "Create", bundle: nil)
         let vc3 = createCardSB.instantiateViewController(withIdentifier: "CreateVC" )
@@ -73,10 +75,11 @@ class LoginVC: UIViewController {
         tabBarVC.setViewControllers([vc1, vc2, vc3], animated: false)
         
         tabBarVC.modalPresentationStyle = .fullScreen
+       present(tabBarVC, animated: true)
+
+       show(tabBarVC, sender: nil)
         
-        present(tabBarVC, animated: true)
-        
-        show(tabBarVC, sender: nil)
+      
         //        let flashCardSB = UIStoryboard(name: "FlashCard", bundle: nil)
             
         //        self.present(vc, animated: true)
