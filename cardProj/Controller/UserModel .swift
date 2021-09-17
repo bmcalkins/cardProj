@@ -12,6 +12,10 @@ struct User {
    
     static var current: Firebase.User? = nil
     
+    static func setUser(_ user: Firebase.User) {
+        current = user
+    }
+    
     static func isGuest() -> Bool {
         return current == nil
     }

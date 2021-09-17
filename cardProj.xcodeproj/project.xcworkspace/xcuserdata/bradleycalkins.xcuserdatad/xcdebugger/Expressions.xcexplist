@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "AccountVC.navigateSignIn():AccountVC.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in LoginVC.signIn(_:):LoginVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "User.current">
+            </PersistentString>
+            <PersistentString
+               value = "result!.user as Firebase.User">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AccountVC.viewDidLoad():AccountVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "User.isGuest()">
+            </PersistentString>
+            <PersistentString
+               value = "User.current">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static AppDelegate.$main():AppDelegate.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
